@@ -3,9 +3,10 @@ from torch import nn, optim
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 import matplotlib.pyplot as plt
-import cnn
-import pbSGD
-import pbAdam
+import model.cnn as cnn
+import optim.pbAdam as pbAdam
+import optim.pbSGD as pbSGD 
+
 
 
 def dataload(batch_size):
