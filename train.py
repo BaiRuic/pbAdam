@@ -96,7 +96,7 @@ for epoch in range(epochs):
     test(epoch)
 
 # 绘图
-plt.figure()
+plt.figure(figsize=(12,6))
 plt.plot(train_loss,label='train_loss')
 plt.plot(test_loss, label='valid_loss')
 plt.legend()
