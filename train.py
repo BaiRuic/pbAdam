@@ -30,7 +30,11 @@ def dataload(batch_size):
     return train_loader, test_loader
 
 def train(epoch):
-    
+    """模型训练部分
+
+    Args:
+        epoch ([int]): [当前的epoch]
+    """
     model.train()
     train_ls = 0
     correct = 0
