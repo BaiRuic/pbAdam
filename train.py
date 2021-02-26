@@ -77,7 +77,7 @@ def test(epoch):
     print('Test Loss: %.3f | Acc: %.3f%% (%d/%d)' % (test_ls/(batch_idx+1), 100.*correct/total, correct, total))
 
 # 定义参数
-DEVICE = torch.device('gpu' if torch.cuda.is_available() else 'cpu')
+DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 epochs = 3
 batch_size=64
 learning_rate = 0.02
